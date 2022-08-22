@@ -8,6 +8,7 @@ body{
     align-items: center;
     color: hsl(215, 51%, 70%);
     font-family: 'Outfit', sans-serif;
+    min-height: calc(100vh - 0.1px);
 }
 
 #main{
