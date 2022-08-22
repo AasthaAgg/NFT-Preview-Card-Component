@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+}
+
+#main{
+    background-color: hsl(216, 50%, 16%);
+    max-width: 290px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.equilibrium{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+article:first-child{
+    position: relative;
+}
+
+article:first-child div{
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 50%);
+    height: calc(100% - 4px);
+    width: 100%;
+    border-radius: 1rem;
+    z-index: 999;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+article:first-child div:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+article:first-child div img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1,span{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+h1:hover, span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+section{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.val{
+    width: 50%;
+    float: left;
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    align-items: center;
+}
+
+.time{
+    width: 50%;
+    float: right;
+    display: flex;
+    align-items: right;
+    justify-content: end;
+}
+
+hr{
+    border-color: hsl(215, 51%, 70%);
+    margin-top: 1rem;
+    border-width: 0.25px;
+}
+
+ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#icon{
+    height: 1.85rem;
+    width: 1.85rem;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(0, 0%, 100%);
+    margin-top: 5px;
+    margin-right: 1rem;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
